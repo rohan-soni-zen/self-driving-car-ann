@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<title>Self-Driving Car</title>
+	</head>
 
-<head>
-    <link rel="stylesheet" href="style.css">
-    <title>Self-Driving Car</title>
-</head>
+	<body>
+		<canvas id="carCanvas"></canvas>
+		<div id="verticalButtons">
+			<button onClick="save()">💾</button>
+			<button onClick="discard()">🗑️</button>
+		</div>
+		<canvas id="networkCanvas"></canvas>
+		<div id="explanation">
+			<h2>🚗 Self-Driving Car</h2>
+			<div class="explanation-content">
+				<h3>What is this?</h3>
+				<p>
+					This is a simulation where 100 cars learn to drive by
+					themselves using computer brains.
+				</p>
 
-<body>
-    <canvas id="carCanvas"></canvas>
-    <div id="verticalButtons">
-        <button onClick="save()">💾</button>
-        <button onClick="discard()">🗑️</button>
-    </div>
-    <canvas id="networkCanvas"></canvas>
-    <script src="visualizer.js"></script>
-    <script src="network.js"></script>
-    <script src="sensor.js"></script>
-    <script src="utils.js"></script>
-    <script src="road.js"></script>
-    <script src="controls.js"></script>
-    <script src="car.js"></script>
-    <script src="main.js"></script>
-</body>
+				<h3>How does it work?</h3>
+				<ul>
+					<li>
+						<strong>Blue cars</strong> are the cars learning to
+						drive
+					</li>
+					<li><strong>Red cars</strong> are traffic obstacles</li>
+					<li>
+						The cars use sensors to "see" the road and obstacles
+					</li>
+					<li>
+						They learn from their mistakes and get better over time
+					</li>
+				</ul>
 
+				<h3>What you see:</h3>
+				<ul>
+					<li>
+						<strong>Left canvas:</strong> The driving simulation
+					</li>
+					<li><strong>Middle canvas:</strong> The computer brain</li>
+					<li>
+						<strong>Buttons:</strong> Save the best brain or start
+						over
+					</li>
+				</ul>
+
+				<h3>Watch and learn:</h3>
+				<p>
+					The best performing car (shown clearly) gets its brain
+					saved. Other cars get slightly modified versions to try
+					different strategies.
+				</p>
+			</div>
+		</div>
+		<script src="visualizer.js"></script>
+		<script src="network.js"></script>
+		<script src="sensor.js"></script>
+		<script src="utils.js"></script>
+		<script src="road.js"></script>
+		<script src="controls.js"></script>
+		<script src="car.js"></script>
+		<script src="main.js"></script>
+	</body>
 </html>

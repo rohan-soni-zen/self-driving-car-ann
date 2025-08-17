@@ -12,8 +12,6 @@ body {
     flex-direction: column;
 }
 
-
-
 #carCanvas {
     background: lightgray;
 }
@@ -32,4 +30,50 @@ button:hover {
 
 #networkCanvas {
     background: black;
+}
+
+#explanation {
+    background: lightgray;
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-left: 2px solid darkgray;
+}
+
+#explanation h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#explanation h3 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+#explanation p {
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+#explanation ul {
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+#explanation li {
+    margin-bottom: 5px;
+}
+
+#explanation strong {
+    color: #333;
 }
